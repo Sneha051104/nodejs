@@ -1,0 +1,16 @@
+<script>
+    function prom(a){
+        return new Promise(function(resolve,reject){
+            fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
+        })
+        
+    }
+
+    prom(true);
+    console.log("hello gwalior");
+    console.log("hello gwalior");
+    console.log("hello gwalior");
+    console.log("hello gwalior");
+</script>

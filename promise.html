@@ -1,0 +1,24 @@
+<script>
+    function prom(a){
+        return new Promise(function(resolve,reject){
+            if(a){
+                resolve("yes")
+            }else{
+                reject("no")
+            }
+        })
+        
+    }
+
+    // console.log(prom(true))
+
+    //to call the value of resolve in browser we will use 'then'
+    prom(true).then((result)=>{
+        document.write(result)
+        console.log(result)
+    }).catch((err=>{
+        console.log(err)
+    }))
+
+   
+</script>

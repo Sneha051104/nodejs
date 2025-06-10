@@ -1,0 +1,27 @@
+<script>
+    function prom(a){
+        return new Promise(function(resolve,reject){
+            setTimeout(()=>{
+                if(a){
+                resolve("yes")
+            }else{
+                reject("no")
+            }
+            },4000)
+        })
+        
+    }
+
+    prom(true).then((result)=>{
+        document.write(result)
+        console.log(result)
+    }).catch((err=>{
+        console.log(err)
+    }))
+    
+
+   console.log("hello gwalior")
+   console.log("hello gwalior")
+   console.log("hello gwalior")
+   console.log("hello gwalior")
+</script>
